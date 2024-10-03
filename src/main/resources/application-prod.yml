@@ -1,0 +1,17 @@
+# jpa
+spring:
+  profiles: prod
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://wopsv.synology.me:3396/shop
+    username: SU00001
+    password: $1kiNdeR8@
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+    database-platform: org.hibernate.dialect.MariaDB103Dialect
+  h2:
+    console:
+      enabled: true
+
